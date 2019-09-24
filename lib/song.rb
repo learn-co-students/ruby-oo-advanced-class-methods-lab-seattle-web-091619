@@ -55,7 +55,6 @@ k = name.split(".mp3")
 y = k[0].split(" - ")
 puts y[1]
 song =create_by_name(y[1], y[0])
-song.artist_name = y[0]
 end
 
 def self.create_from_filename(name)
@@ -67,7 +66,7 @@ create_by_name(y[1], y[0])
 end
 
 def self.destroy_all
-@@all = []
+@@all.clear
 end
 
 
